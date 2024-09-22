@@ -184,6 +184,7 @@ h1 {
 .socials {
     list-style: none;
     width: fit-content;
+    text-align: center;
 }
 
 .socials li {
