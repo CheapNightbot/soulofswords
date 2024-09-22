@@ -181,6 +181,10 @@ h1 {
     background: #95A6CE;
 }
 
+.social-container {
+    align-items: flex-end;
+}
+
 .socials {
     list-style: none;
     width: fit-content;
@@ -211,5 +215,9 @@ footer {
 
     #index-imgs {
         width: 100%;
+    }
+
+    .bi {
+        font-size: 2rem !important;
     }
 }
