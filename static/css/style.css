@@ -104,7 +104,8 @@ button:hover {
     cursor: url("../hover-cursor.png") 19 2, auto;
 }
 
-.yt-container:hover {
+.yt-container:hover,
+.scroll-container:hover {
     transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0 0 20px 0 #a7caff;
 }
@@ -201,12 +202,29 @@ footer {
     width: 100%;
     text-align: center;
     align-content: center;
-    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+.scroll-container {
+    visibility: hidden;
+    position: sticky;
+    bottom: 2%;
+    left: 100%;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    border-radius: 16px 0 0 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+#scroll-percent {
+    font-size: 1rem !important;
 }
 
 @media (max-width: 1024px) {
     body {
-        font-size: 2vw;
+        font-size: 1.75vw;
     }
 
     main {
