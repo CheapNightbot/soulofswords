@@ -7,6 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Disable right click context menu
     document.addEventListener('contextmenu', e => e.preventDefault());
 
+    // Change cursor on mouse click
+    document.addEventListener('mousedown', function() {
+        document.body.style.cursor = 'url("static/click-cursor.png") 19 2, auto';
+    });
+
+    document.addEventListener('mouseup', function() {
+        document.body.style.cursor = 'url("static/default-cursor.png") 19 2, auto';
+    });
+
     scrollToTop.addEventListener('click', (e) => {
         e.preventDefault();
 
